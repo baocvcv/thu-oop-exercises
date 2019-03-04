@@ -1,0 +1,5 @@
+I have no real programming skills to tell.
+
+The only project that I have finished and can recall is the individual project from last semester's Introduction to Programming course, where we were asked to submit a jumping game using the WIN32 API.
+
+I did try participating in the NOIP competition back in around 2010, when I was in high school. There was no adequate training available in Ningxia and I got nowhere with the competition.
