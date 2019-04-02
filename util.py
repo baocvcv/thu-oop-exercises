@@ -10,6 +10,8 @@ def create_dir(week, noProblems):
         os.makedirs(root)
         for i in range(1, noProblems+1):
             os.makedirs(os.path.join(root, 'Problem%d' % i))
+            #os.symlink("./makefile", os.path.join(root, 'Problem%d' % i, 'makefile'))
+            #TODO: make symlink work
     except OSError as e:
         if e.errno != errno.EEXIST:
             raise

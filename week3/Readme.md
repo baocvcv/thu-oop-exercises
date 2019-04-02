@@ -1,0 +1,1 @@
+To run the program in each folder, cd into the folder and use: make && ./main

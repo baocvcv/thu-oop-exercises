@@ -1,5 +1,5 @@
-#include <vector>
 #include "BruteForce.h"
+#include <vector>
 
 int BruteForce::solve(std::vector<int> T, std::vector<int> M, int totalT){
     return dfs(T, M, totalT, 0);

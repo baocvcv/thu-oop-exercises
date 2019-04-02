@@ -1,11 +1,10 @@
+#include "Efficient.h"
+#include "BruteForce.h"
 #include <iostream>
 #include <vector>
 #include <chrono>
 #include <ctime>
 #include <cstdlib>
-
-#include "Efficient.h"
-#include "BruteForce.h"
 
 int main(){
     Efficient efficient;
