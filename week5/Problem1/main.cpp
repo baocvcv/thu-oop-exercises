@@ -37,11 +37,11 @@ int main(){
     std::cout << "The points are: " << std::endl;
     for(unsigned int i = 0; i < nums.size(); i++){
         Node n(nums[i].first, nums[i].second);
-        printf("%2d: ", i);
+        printf("%2d: ", i+1);
         n.print();
         nodes.push_back(n);
     }
-    
+
     WeightedGraph G(N);
     for(int i = 0; i < N; i++){
         for(int j = i+1; j < N; j++){
