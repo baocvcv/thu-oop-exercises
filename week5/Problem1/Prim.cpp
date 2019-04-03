@@ -4,7 +4,7 @@
 #include "WeightedGraph.h"
 
 #include <vector>
-#include <iostream>
+#include <cstdlib>
 #include <queue>
 
 Prim::Prim(WeightedGraph G){
@@ -48,12 +48,10 @@ Prim::Prim(WeightedGraph G){
 }
 
 void Prim::print_mst(){
-    std::cout << "===== Edges of MST ======" << std::endl;
-    std::cout << " v   w   weight" << std::endl;
+    printf("===== Edges of MST ======\n");
+    printf(" v  w  weight\n");
     for(Edge e: mst){
-        std::cout << e.get_v() << ' ';
-        std::cout << e.get_w() << ' ';
-        std::cout << e.get_weight() << std::endl;
+        printf("%2d %2d  %.2f\n", e.get_v(), e.get_w(), e.get_weight());
     }
-    std::cout << "===============" << std::endl;
+    printf("===============\n");
 }

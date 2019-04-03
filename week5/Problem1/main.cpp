@@ -5,6 +5,7 @@
 
 #include <vector>
 #include <iostream>
+#include <cstdio>
 #include <cstdlib>
 #include <ctime>
 
@@ -36,6 +37,7 @@ int main(){
     std::cout << "The points are: " << std::endl;
     for(unsigned int i = 0; i < nums.size(); i++){
         Node n(nums[i].first, nums[i].second);
+        printf("%2d: ", i);
         n.print();
         nodes.push_back(n);
     }

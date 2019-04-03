@@ -1,7 +1,7 @@
 #pragma once
 
 #include <cmath>
-#include <iostream>
+#include <cstdio>
 
 class Node{
     public:
@@ -14,6 +14,6 @@ class Node{
     };
 
     void print(){
-        std::cout << '(' << x << ", " << y << ')' << std::endl;
+        printf("(%4d, %4d)\n", x, y);
     }
 };
