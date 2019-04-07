@@ -19,7 +19,7 @@ void WeightedGraph::insert(Edge e){
     edges_list[w].push_back(e);
 }
 
-inline const std::vector<Edge>& WeightedGraph::adj(int v){
+const std::vector<Edge>& WeightedGraph::adj(int v){
     return edges_list[v];
 }
 
