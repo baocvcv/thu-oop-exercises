@@ -15,7 +15,6 @@ class Edge{
     int get_v() const { return v; }
     int get_w() const { return w; }
     double get_weight() const { return weight; }
-
     int get_other(int vertex){
         if (vertex == v) return w;
         else return v;

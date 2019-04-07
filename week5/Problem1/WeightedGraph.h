@@ -12,7 +12,9 @@ class WeightedGraph{
     public:
     WeightedGraph(int _V);
 
-    void insert(Edge e);
-    const std::vector<Edge>& adj(int v);
     int get_V() { return V; }
+    void insert(Edge e);
+    
+    // return edges connected to vertex v
+    const std::vector<Edge>& adj(int v);
 };

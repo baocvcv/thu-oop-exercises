@@ -13,6 +13,7 @@ int main(){
     const int N = 50;
     const int mod = 10001;
 
+    // generate 50 distinct points
     std::vector<std::pair<int, int>> nums;
     srand(time(0));
     int x = rand() % mod;
@@ -23,6 +24,7 @@ int main(){
         do{
             x = rand() % mod;
             y = rand() % mod;
+            // check for repitition
             for(unsigned int i = 0; i < nums.size(); i++){
                 if(nums[i].first == x && nums[i].second == y){
                     flag = false;
@@ -33,6 +35,7 @@ int main(){
        nums.push_back(std::make_pair(x, y));
     }
 
+    // print the points
     std::vector<Node> nodes;
     std::cout << "The points are: " << std::endl;
     for(unsigned int i = 0; i < nums.size(); i++){
@@ -41,7 +44,8 @@ int main(){
         n.print();
         nodes.push_back(n);
     }
-
+    
+    // contruct graph
     WeightedGraph G(N);
     for(int i = 0; i < N; i++){
         for(int j = i+1; j < N; j++){
@@ -51,6 +55,7 @@ int main(){
         }
     }
 
+    // calculate mst
     Prim prim(G);
     prim.print_mst();
 

@@ -12,6 +12,6 @@ class Prim{
 
     public:
     Prim(WeightedGraph G);
+
     void print_mst();       
-    
 };
