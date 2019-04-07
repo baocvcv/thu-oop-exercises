@@ -14,7 +14,7 @@ Prim::Prim(WeightedGraph G){
     auto cmp = [](Edge e, Edge f){
         return e.get_weight() > f.get_weight();
     };
-    //std::priority_queue<Edge, std::vector<Edge>, decltype(Edge::compare)> pq(Edge::compare);
+
     std::priority_queue<Edge, std::vector<Edge>, decltype(cmp)> pq(cmp);
 
     int s = 0;
@@ -45,6 +45,8 @@ Prim::Prim(WeightedGraph G){
             marked[w] = true;
         }
     }
+
+    delete[] marked;
 }
 
 void Prim::print_mst(){
@@ -55,5 +57,5 @@ void Prim::print_mst(){
         std::cout << e.get_w() << ' ';
         std::cout << e.get_weight() << std::endl;
     }
-    std::cout << "===============" << std::endl;
+    std::cout << "===================" << std::endl;
 }
