@@ -57,6 +57,7 @@ void Matrix::display() const {
         }
         std::cout << std::endl;
     }
+    std::cout << std::endl;
 }
 
 void Matrix::save(const std::string& filename) const {
@@ -81,7 +82,6 @@ const Matrix Matrix::multiply(const Matrix& b) const {
         std::cout << mat[0].size() << ' ' << b.mat.size() << std::endl;
         std::cout << "Error: matrix size does not match. Cannot multiply.\n";
     }
-    display();
 
     for(unsigned int i = 0; i < mat.size(); i++){
         std::vector<int> row;
