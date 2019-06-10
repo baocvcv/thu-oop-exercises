@@ -1,0 +1,2 @@
+void* mem = m_blockAllocator.Allocate(sizeof(b2Body));
+b2Body* b = new (mem) b2Body(def, this);

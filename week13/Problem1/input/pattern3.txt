@@ -1,0 +1,1 @@
+m_buffer[0] = chain->m_vertices[index];

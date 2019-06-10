@@ -1,0 +1,2 @@
+b2Vec2 translation = h * v;
+if (b2Dot(translation, translation) > b2_maxTranslationSquared)

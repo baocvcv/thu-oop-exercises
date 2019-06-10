@@ -1,0 +1,3 @@
+profile->solveInit = timer.GetMilliseconds();
+timer.Reset();
+for (int32 i = 0; i < step.velocityIterations; ++i)

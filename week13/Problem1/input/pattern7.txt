@@ -1,0 +1,2 @@
+m_velocities[i].v = v;
+m_velocities[i].w = w;

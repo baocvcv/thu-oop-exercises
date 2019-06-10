@@ -1,0 +1,2 @@
+f0->DestroyProxies(&m_contactManager.m_broadPhase);
+f0->Destroy(&m_blockAllocator);
